@@ -1,0 +1,36 @@
+STATIC:
+User's must be named 'liam', 'daury', or 'nicholas', with emails that are the first name followed by '@email.com' there must exist a public and private key in the same directory as main.py for the user trying to login. They have already been generated, and are included in this github.
+
+The python packages utilized were the following:
+
+1. json: 
+        - Used for parsing and writing JSON data, particularly for handling user and contact information stored in .json files.
+
+2. os:
+        - Provides a way to interact with the operating system, used for file path manipulations and other OS-level operations.
+
+3. bcrypt: 
+        - Utilized for hashing user passwords securely.
+
+4. getpass: 
+        - Used to securely prompt the user for a password without echoing it on the screen.
+
+5. socket: 
+        - Essential for creating sockets, enabling the networking capabilities of our application like sending and receiving data over the network.
+
+6. time: 
+        - Likely used for handling delays or timeouts in networking operations.
+
+7. cryptography: 
+    - A comprehensive package used for various cryptographic operations, including handling encryption and decryption, working with certificates and keys, etc.
+    Imports:
+            from cryptography.hazmat.primitives import serialization -> Provides serialization and deserialization of cryptographic keys.
+            from cryptography.hazmat.primitives.asymmetric import padding -> Offers padding schemes for asymmetric encryption
+            from cryptography.hazmat.primitives import hashes -> Used for cryptographic hashing operations.
+            from cryptography import x509 -> Deals with X.509 certificates, which are crucial for public key infrastructure (PKI).
+            from cryptography.hazmat.backends import default_backend -> Supplies the default backend for cryptographic operations.
+
+8. hashlib: 
+        - Used for generating hash values, specifically SHA-256 hashes in our application.
+
+** The cryptography package is particularly central to our project, given its focus on secure file transfer and the need for robust cryptographic functionalities.
